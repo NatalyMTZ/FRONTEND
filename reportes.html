@@ -4,12 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="CSS/ordereat-inicio.css">
         <link rel="stylesheet" href="CSS/xx.css">
+        <link rel="stylesheet" href="CSS/tabla.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="IMG/isotipo.png"> 
-        <title>Historial</title>
+        <title>Reportes</title>
+        <style>
+            section{
+                padding-top: 0px !important;
+            }
+
+            .main{
+                overflow: scroll;
+            }
+
+            .pagos a{
+                text-decoration: none;
+                color: hsl(355, 4%, 35%);
+                border-color: hsl(355, 4%, 35%);
+            }
+
+            button{
+                padding: 2px;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -78,12 +99,91 @@
 
         <!--========== CONTENTS ==========-->
         <main>
-            <section>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <button>Hola</button>
+            <section class="gift section container" id="gift">
+
+                <div class="gift__container grid">
+                    <article class="gift__card">
+                        <img src="assets/img/gift1.png" alt="" class="gift__img">
+                        <i class='bx bx-dollar gift__icon'></i>
+                        
+                        <h3 class="gift__price">Venta Total</h3>
+                        <span class="gift__title">$</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift2.png" alt="" class="gift__img">
+                        <i class='bx bx-receipt gift__icon'></i>
+                        
+                        <h3 class="gift__price">Ordenes Entregadas</h3>
+                        <span class="gift__title">#</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift3.png" alt="" class="gift__img">
+                        <i class='bx bx-user gift__icon'></i>
+                        
+                        <h3 class="gift__price">Cuenta Promedio</h3>
+                        <span class="gift__title">$</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift4.png" alt="" class="gift__img">
+                        <i class='bx bx-dish gift__icon'></i>
+                        
+                        <h3 class="gift__price">Platillos Más Vendido</h3>
+                        <span class="gift__title">#1</span>
+                        <span class="gift__title">#2</span>
+                        <span class="gift__title">#3</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bx-user gift__icon'></i>
+                        
+                        <h3 class="gift__price">Clientes Más Frecuentes</h3>
+                        <span class="gift__title">#1</span>
+                        <span class="gift__title">#2</span>
+                        <span class="gift__title">#3</span>
+                    </article>
+
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bx-bar-chart-alt-2 gift__icon'></i>
+                        
+                        <h3 class="gift__price">Balance</h3>
+                        <span class="gift__title">$</span>
+                    </article>
+                </div>
             </section>
+            <div class="pagos">
+                <center>
+                    <h2>Pagos</h2>
+                    <button><a href="agregarpagos.html">Agregar Pago</a></button>
+                    
+                </center>
+                <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                         <th>Nombre del Pago</th>
+                         <th>Comentario</th>
+                         <th>Costo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                                <td data-label="Nombre del Pago">Luz</td>
+                                <td data-label="Comentario">Pago semestral</td>
+                                <td data-label="Costo">$250</td>
+                          </tr>
+                          <tr>
+                            <td data-label="Nombre del Pago">Luz</td>
+                            <td data-label="Comentario">Pago semestral</td>
+                            <td data-label="Costo">$250</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
         <!--========== MAIN JS ==========-->

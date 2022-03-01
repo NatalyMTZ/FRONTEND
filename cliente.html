@@ -6,19 +6,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="CSS/pag-agregar.css">
         <link rel="stylesheet" href="CSS/xx.css">
-        <link rel="stylesheet" href="CSS/tabla.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="IMG/isotipo.png"> 
-        <title>Historial</title>
+        <title>Cliente</title>
+        <style>
+            a{
+                text-decoration: none;
+                color: hsl(355, 4%, 35%);
+                text-align: end;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
             <div class="header__container">
                 <img src="IMG/isotipo.png" alt="logo" class="header__img">
-
-                <a class="header__logo">Historial</a>
+                <a class="atras" href="ordenes.html"><i class='bx bx-chevron-left atras'></i></a>
+                
+                <a class="header__logo">Cliente</a>
 
     
                 <div class="header__toggle">
@@ -40,7 +47,7 @@
                         <div class="nav__items">
                             <h3 class="nav__subtitle">Modulos</h3>
     
-                            <a href="ordenes.html" class="nav__link">
+                            <a href="ordenes.html" class="nav__link active">
                                 <i class='bx bx-home nav__icon' ></i>
                                 <span class="nav__name">Ordenes</span>
                             </a>
@@ -59,7 +66,7 @@
                         <div class="nav__items">
                             <h3 class="nav__subtitle">Estadísticas</h3>
 
-                            <a href="historial.html" class="nav__link active">
+                            <a href="historial.html" class="nav__link">
                                 <i class='bx bx-pie-chart-alt nav__icon' ></i>
                                 <span class="nav__name">Historial</span>
                             </a>
@@ -87,35 +94,14 @@
                             <form action="#" class="form">
                                 <div>
                                     <label for="name" class="label">Cliente</label>
-                                    <select class="select"></select>
-
+                                    <select class="select" required></select>
                                 </div>
-                                <input type="submit" value="Buscar" class="primary-button login-button">
+                                <br>
+                                <input type="submit" value="Continuar" class="primary-button login-button">
+                                <a href="agregarcliente.html" class="link">Agregar Cliente</a>
                             </form>
                     </div>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                         <th>Cliente</th>
-                         <th>Dirección</th>
-                         <th>Cantidad</th>
-                         <th>Platillo</th>
-                         <th>Comentarios</th>
-                         <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                          <tr>
-                                <td data-label="Cliente">Mario</td>
-                                <td data-label="Dirección">Catarino Benavides 150</td>
-                                <td data-label="Cantidad">1</td>
-                                <td data-label="Platillo">Hamburguesa</td>
-                                <td data-label="Comentarios">Sin catsup</td>
-                                <td data-label="Total">$250</td>
-                          </tr>
-                    </tbody>
-                </table>
             </section>
         </main>
 

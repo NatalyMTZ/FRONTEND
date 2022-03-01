@@ -6,19 +6,24 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="CSS/pag-agregar.css">
         <link rel="stylesheet" href="CSS/xx.css">
-        <link rel="stylesheet" href="CSS/tabla.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="IMG/isotipo.png"> 
-        <title>Historial</title>
+        <title>Agregar Platillo</title>
+        <style>
+            .title{
+                margin-top: 70px !important;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
             <div class="header__container">
                 <img src="IMG/isotipo.png" alt="logo" class="header__img">
-
-                <a class="header__logo">Historial</a>
+                <a class="atras" href="platillos.html"><i class='bx bx-chevron-left atras'></i></a>
+                
+                <a class="header__logo">Platillo Nuevo</a>
 
     
                 <div class="header__toggle">
@@ -45,7 +50,7 @@
                                 <span class="nav__name">Ordenes</span>
                             </a>
 
-                            <a href="platillos.html" class="nav__link">
+                            <a href="platillos.html" class="nav__link active">
                                     <i class='bx bx-dish nav__icon' ></i>
                                     <span class="nav__name">Platillos</span>
                             </a>
@@ -59,7 +64,7 @@
                         <div class="nav__items">
                             <h3 class="nav__subtitle">Estadísticas</h3>
 
-                            <a href="historial.html" class="nav__link active">
+                            <a href="historial.html" class="nav__link">
                                 <i class='bx bx-pie-chart-alt nav__icon' ></i>
                                 <span class="nav__name">Historial</span>
                             </a>
@@ -83,39 +88,26 @@
             <section>
                 <div class="container">
                     <div class="form-container">
-                        <h1 class="title">Seleccionar Cliente</h1>
+                        <h1 class="title">Agregar Platillo</h1>
                             <form action="#" class="form">
                                 <div>
-                                    <label for="name" class="label">Cliente</label>
+                                    <label for="name" class="label">Nombre</label>
+                                    <input type="text" id="nombre" placeholder="" class="input input-name" required>
+
+                                    <label for="name" class="label">Tiempo</label>
                                     <select class="select"></select>
 
+                                    <label for="name" class="label">Descripción</label>
+                                    <input type="text" id="desc" placeholder="" class="input input-name" required>
+
+                                    <label for="name" class="label">Precio</label>
+                                    <input type="number" id="precio" placeholder="" class="input input-name" required>
+
                                 </div>
-                                <input type="submit" value="Buscar" class="primary-button login-button">
+                                <input type="submit" value="Agregar" class="primary-button login-button">
                             </form>
                     </div>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                         <th>Cliente</th>
-                         <th>Dirección</th>
-                         <th>Cantidad</th>
-                         <th>Platillo</th>
-                         <th>Comentarios</th>
-                         <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                          <tr>
-                                <td data-label="Cliente">Mario</td>
-                                <td data-label="Dirección">Catarino Benavides 150</td>
-                                <td data-label="Cantidad">1</td>
-                                <td data-label="Platillo">Hamburguesa</td>
-                                <td data-label="Comentarios">Sin catsup</td>
-                                <td data-label="Total">$250</td>
-                          </tr>
-                    </tbody>
-                </table>
             </section>
         </main>
 

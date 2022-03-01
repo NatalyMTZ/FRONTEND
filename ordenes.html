@@ -5,11 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="CSS/xx.css">
+        <link rel="stylesheet" href="CSS/tabla.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="IMG/isotipo.png"> 
-        <title>Historial</title>
+        <title>Ordenes</title>
+        <style>
+            button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            }
+
+            .button {
+            display: inline-block;
+            background-color: var(--first-color);
+            color: #fff;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: .5rem;
+            font-family: 'Quicksand';
+            font-size: 14px;
+            }
+
+            .button:hover {
+                box-shadow: 0px 15px 36px rgba(0,0,0,.15);
+                color: #fff;
+            }
+
+            .sec-button{
+                display: inline-block;
+                background-color: white;
+                border-color: #FFDE59;
+                padding: 1rem 2rem;
+                font-weight: bold;
+                border-radius: .5rem;
+                font-family: 'Quicksand';
+                font-size: 12px;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -79,11 +114,43 @@
         <!--========== CONTENTS ==========-->
         <main>
             <section>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vel illum fuga unde cum, voluptates magni molestias eveniet culpa autem ut, totam veniam, suscipit tempore ullam pariatur est at asperiores?</p>
-                <button>Hola</button>
+                <center>
+                    <a href="cliente.html">
+                        <button class="button">Agregar Orden</button>
+                    </a>
+                </center>
             </section>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Dirección</th>
+                        <th>Cantidad</th>
+                        <th>Platillo</th>
+                        <th>Comentario</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                            <td data-label="Fecha">01/03/2022 12:15am</td>
+                            <td data-label="Cliente">Mario</td>
+                            <td data-label="Dirección">Catarino Benavides 150, Ampliación San Pedro Xalpa, Azcapotzalco, CDMX</td>
+                            <td data-label="Cantidad">2</td>
+                            <td data-label="Platillo">Hamburguesa</td>
+                            <td data-label="Comentario">Sin cebolla</td>
+                            <td data-label="Total">$250</td>
+                            <td data-label="Acciones">
+                                <button class="sec-button">Editar</button>
+                                <button class="sec-button">Eliminar</button>
+                            </td>
+                      </tr>
+                </tbody>
+            </table>
         </main>
 
         <!--========== MAIN JS ==========-->
